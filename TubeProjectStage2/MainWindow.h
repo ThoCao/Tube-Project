@@ -2,6 +2,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_MainWindow.h"
+#include "SecDialog.h"
 
 class MainWindow : public QMainWindow
 {
@@ -10,6 +11,10 @@ class MainWindow : public QMainWindow
 public:
 	MainWindow(QWidget *parent = Q_NULLPTR);
 
+	private slots:
+	void on_btnNeuralNet_clicked(void);
+private:
+	SecDialog * neuralNetwork;
 private:
 	Ui::MainWindowClass ui;
 };

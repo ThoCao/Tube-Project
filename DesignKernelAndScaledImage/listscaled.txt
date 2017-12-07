@@ -1,0 +1,5 @@
+list: 124
+list2: 96
+list3: 78
+list4: 64
+
