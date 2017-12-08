@@ -8,7 +8,7 @@
       <AdditionalIncludeDirectories>C:\ThoCao\Install 2.0.0\64bit\opencv\include;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets;C:\Users\thoca\Desktop\Tube Project Stage 2\Source Code\TubeProject\TubeProjectStage2\Include;C:\Qt\Qt5.6.2\5.6\msvc2015_64\include\QtConcurrent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>C:\ThoCao\Install 2.0.0\64bit\opencv\x64\vc14\lib;C:\Users\thoca\Desktop\Tube Project Stage 2\Source Code\TubeProject\TubeProjectStage2\lib\PointGrey;C:\Users\thoca\Desktop\Tube Project Stage 2\Source Code\TubeProject\TubeProjectStage2\lib\BaslerCam;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\ThoCao\Install 2.0.0\64bit\opencv\x64\vc14\lib;C:\Users\thoca\Desktop\Tube Project Stage 2\Source Code\TubeProject\TubeProjectStage2\lib\PointGrey;C:\Users\thoca\Desktop\Tube Project Stage 2\Source Code\TubeProject\TubeProjectStage2\lib\BaslerCam;C:\Qt\Qt5.6.2\5.6\msvc2015_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opencv_world330d.lib;opencv_world330.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;FlyCapture2_Cd_v140.lib;FlyCapture2d_v140.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>

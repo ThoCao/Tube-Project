@@ -20,36 +20,6 @@ MainWindow::MainWindow(QWidget *parent)
 
 void MainWindow::on_cameraOpen_clicked(void){
 
-	
-
-	///* poingrey */
-	//if (_pointgrey_camera_->OpenCam()) {
-	//	ui.textEdit->setText("Open PointGrey Camera Successed!");
-	//}
-	//else {
-	//	ui.textEdit->setText("Failed To Open PointGrey Camera!");
-	//}
-
-	///* Basler*/
-	//if (_basler_cam_->OpenCam()) {
-	//	ui.textEdit->setText("Open Basler Camera Successed!");
-	//}
-	//else {
-	//	ui.textEdit->setText("Failed To Open Basler Camera!");
-	//}
-	//
-	///* Active Timer */
-	//if (_cameraTimer_->isActive()) {
-	//	_cameraTimer_->stop();
-	//}
-	//else {
-	//	_cameraTimer_->start(TIMER_CAM);
-	//}
-
-	///* Delay */
-	//_wait(1000);
-
-
 	emit on_OpenCam();
 }
 
@@ -100,15 +70,19 @@ void MainWindow::getImageFromThread(unsigned int _id, cv::Mat _image){
 	{
 	case 0:
 		ui.LUpImage->setImage(_image);
+		_image.copyTo(this->mLUpimg);
 		break;
 	case 1:
 		ui.RUpImage->setImage(_image);
+		_image.copyTo(this->mRUpimg);
 		break;
 	case 2:
 		ui.LDownImage->setImage(_image);
+		_image.copyTo(this->mLDownimg);
 		break;
 	case 3:
 		ui.RDownImage->setImage(_image);
+		_image.copyTo(this->mRDownimg);
 		break;
 	default:
 		break;
